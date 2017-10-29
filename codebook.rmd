@@ -8,7 +8,7 @@ output: html_document
 # Codebook
 
 ### Abstract
-From the University of Califronia Irvine Human Activity Recognition (UCI HAR) database, the average of mean and standard deviation for mean and frequency data built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+From the University of California Irvine Human Activity Recognition (UCI HAR) database, the average of mean and standard deviation for mean and frequency data built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 ## About The Data
 See [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for original research design and methodology. The summary data in the tidyAnalysis.csv file represents the average of the mean and standard deviation of the time and frequency variables grouped by subject and activity from the original dataset.    
