@@ -4,9 +4,9 @@
 This repository contains four files: 
 
 * **README.md** which explains the contents of the run_analysis.R script 
-* **run_analysis.R** which is the R script that converts raw data into tidyAnalysis.csv dataset
-* **tidyAnalsis.csv** which is the result of running run_analysis.R script 
-* **codeook.rmd** which is the CodeBook that corresponds to tidyAnalysis.csv file 
+* **run_analysis.R** which is the R script that converts raw data into tidyAnalysis.txt dataset
+* **tidyAnalysis.txt** which is the result of running run_analysis.R script 
+* **codeook.rmd** which is the CodeBook that corresponds to tidyAnalysis.txt file 
 
 #### Step 0: Automatically download data and load dependencies
 The first codeblock in **run_analysis.R** does the following:
@@ -94,10 +94,10 @@ names(dfMS) <- gsub("-", "", names(dfMS))
 #### Step 5: Create a second tidy dataset with the average of each variable for each activity 
 The codeblock below does the following:
 * Uses the tidyverse::dplyr library to group by activity and subject variables and apply the mean function to all other variables in the dataaset
-* Writes the resulting dataframe as **tidyAnalysis.csv** to the data subdirectory 
+* Writes the resulting dataframe as **tidyAnalysis.txt** to the data subdirectory 
 
 ```R
 dfMS2 <- dfMS %>% group_by(activity, subject) %>% summarise_all(funs(mean))
-write_csv(dfMS2, paste(path, "tidyAnalysis.csv"))
+write.table(dfMS2, paste(path, "tidyAnalysis.txt"), row.names=F)
 ```
 
