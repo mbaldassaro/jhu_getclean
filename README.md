@@ -29,7 +29,7 @@ library(tidyverse); library(forcats)
 
 #### Step 1: Merge training and test data to create one dataset
 The codeblock below does the following:
-* Reads seven data files - features.txt, y_test.txt, y_train.txt, X_test.txt, X_train.txt, subject_test.txt, and subject_train.txt - from the original dataset into your R environment using the read.table() function
+* Reads seven data files - features.txt, y_test.txt, y_train.txt, X_test.txt, X_train.txt, subject_test.txt, and subject_train.txt - from the original dataset into your R environment using the tidyverse:readr read_table() function
 * Renames the column headers using descriptive subject, activity and training and test data labels
 * Merges the training and test data together to create a full dataset
 
