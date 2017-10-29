@@ -53,8 +53,5 @@ names(dfMS) <- gsub("-", "", names(dfMS))
 
 #5. Create a second tidy dataset with the average of each variable for each activity 
 dfMS2 <- dfMS %>% group_by(activity, subject) %>% summarise_all(funs(mean))
-
-#Automatically opens tidy dataset in R Studio 
-View(dfMS2)
-#Writes csv file to directory path location
-write_csv(dfMS2, paste(path, "tidyAnalysis.csv"))
+write.table(dfMS2, paste(path,"tidyAnalysis.txt"), row.names=F)
+#write_csv(dfMS2, paste(path,"tidyAnalysis.csv"))
