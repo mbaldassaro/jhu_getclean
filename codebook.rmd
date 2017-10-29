@@ -9,14 +9,9 @@ output: html_document
 
 ### Abstract
 From the University of California Irvine Human Activity Recognition (UCI HAR) database, the average of mean and standard deviation for mean and frequency data built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
-
-<<<<<<< HEAD
-##About The Data
-See [Human Activity Recognition Using Smartphones Data Set] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for original research design and methodology. The summary data in the tidyAnalysis.txt file represents the average of the mean and standard deviation of the time and frequency variables grouped by subject and activity from the original dataset.    
-=======
+  
 ## About The Data
 See [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for original research design and methodology. The summary data in the tidyAnalysis.csv file represents the average of the mean and standard deviation of the time and frequency variables grouped by subject and activity from the original dataset.    
->>>>>>> origin/master
 
 [Source Data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
@@ -108,13 +103,8 @@ Variable                          | Description
 [,68] freqBodyBodyGyroJerkMagSD   | <num> average standard deviation of frequency of magnitude of angular velocity by body (jerk signal) using FFT  
 
 
-<<<<<<< HEAD
-#Transformations (Data Analysis) 
-The original dataset contained seven files that were processed to make a tidyAnalysis.txt file:
-=======
 ## Transformations (Data Analysis) 
 The original dataset contained seven files that were processed to make a tidyAnalysis.csv file:
->>>>>>> origin/master
 
 * 'features.txt': List of all features.
 * 'train/subject_train.txt': Identifiers for activity performers
@@ -128,8 +118,5 @@ Training data (subject_train, X_train, Y_train) and Test data (subject_test, X_t
 
 From the full dataset, a subset of data containing variables for subject, activity, mean, and standard deviation values was extracted. Activity lables were recoded using values contained in the 'activity_labels.txt' file. Original variable names were cleaned and made descriptive (e.g. "f" was changed to freq, "t" was changed to time) to improve readability.
 
-<<<<<<< HEAD
 The average of each mean and standard deviation variable - grouped by activity and subject - was performed on the subsetted data to produce the tidyAnalysis.txt dataset. The tidyAnalysis.txt dataset contains provides the average of mean and standard deviation variables for each activity (6 activities) performed by each subject (30 subjects). The resulting dataset contains 180 observations, an average value for each activity performed by each subject.       
-=======
-The average of each mean and standard deviation variable - grouped by activity and subject - was performed on the subsetted data to produce the tidyAnalysis.csv dataset. The tidyAnalysis.csv dataset contains provides the average of mean and standard deviation variables for each activity (6 activities) performed by each subject (30 subjects). The resulting dataset contains 180 observations, an average value for each activity performed by each subject.       
->>>>>>> origin/master
+    
