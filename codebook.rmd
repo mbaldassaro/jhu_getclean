@@ -5,9 +5,9 @@ date: "October 28, 2017"
 output: html_document
 ---
 
-## Codebook
+# Codebook
 
-## Abstract
+### Abstract
 From the University of Califronia Irvine Human Activity Recognition (UCI HAR) database, the average of mean and standard deviation for mean and frequency data built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 ## About The Data
@@ -104,7 +104,7 @@ Variable                          | Description
 [,68] freqBodyBodyGyroJerkMagSD   | <num> average standard deviation of frequency of magnitude of angular velocity by body (jerk signal) using FFT  
 
 
-# Transformations (Data Analysis) 
+## Transformations (Data Analysis) 
 The original dataset contained seven files that were processed to make a tidyAnalysis.csv file:
 
 * 'features.txt': List of all features.
