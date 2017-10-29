@@ -5,12 +5,13 @@ date: "October 28, 2017"
 output: html_document
 ---
 
-##Codebook
+## Codebook
 
-##Abstract
+## Abstract
 From the University of Califronia Irvine Human Activity Recognition (UCI HAR) database, the average of mean and standard deviation for mean and frequency data built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-##About The Data
+## About The Data
+
 See [Human Activity Recognition Using Smartphones Data Set] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for original research design and methodology. The summary data in the tidyAnalysis.csv file represents the average of the mean and standard deviation of the time and frequency variables grouped by subject and activity from the original dataset.    
 
 [Source Data] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
@@ -19,7 +20,7 @@ Source Citation: Lichman, M. (2013). UCI Machine Learning Repository <http://arc
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
-##Variables
+## Variables
 For each record in the dataset it is provided: 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -32,7 +33,7 @@ Mean: Mean value
 SD: Standard deviation
 
 Variable                          | Description 
---------------------------------- | -------------------------------------------------------------------------------------------------------------
+--------------------------------- | ------------------------------------------------------------------------------------------------------
 [,1] activity                     | <factor> 6 levels: walking, walking upstairs, walking downstairs, sitting, standing, laying
 [,2] subject                      | <int> range of 1-30 representing each volunteer 
 [,3] timeBodyAccMeanX             | <num> average time of acceleration signal by body in the X direction             
@@ -58,7 +59,7 @@ Variable                          | Description
 [,23] freqBodyAccMeanX            | <num> average frequency of acceleration signal by body in the X direction using FFT 
 [,24] freqBodyAccMeanY            | <num> average frequency of acceleration signal by body in the Y direction using FFT  
 [,25] freqBodyAccMeanZ            | <num> average frequency of acceleration signal by body in the Z direction using FFT  
-[,26] freqBodyAccJerkMeanX        | <num> average frequency of linear acceleration (jerk signal) by body in the X direction using FFT           
+[,26] freqBodyAccJerkMeanX        | <num> average frequency of linear acceleration (jerk signal) by body in the X direction using FFT
 [,27] freqBodyAccJerkMeanY        | <num> average frequency of linear acceleration (jerk signal) by body in the Y direction using FFT    
 [,28] freqBodyAccJerkMeanZ        | <num> average frequency of linear acceleration (jerk signal) by body in the Z direction using FFT    
 [,29] freqBodyGyroMeanX           | <num> average frequency of angular velocity by body in the X direction using FFT     
@@ -74,26 +75,26 @@ Variable                          | Description
 [,39] timeGravityAccSDX           | <num> average standard deviation of time of acceleration signal by gravity in the X direction 
 [,40] timeGravityAccSDY           | <num> average standard deviation of time of acceleration signal by gravity in the Y direction 
 [,41] timeGravityAccSDZ           | <num> average standard deviation of time of acceleration signal by gravity in the Z direction 
-[,42] timeBodyAccJerkSDX          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in the X direction   
-[,43] timeBodyAccJerkSDY          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in the Y direction   
-[,44] timeBodyAccJerkSDZ          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in the Z direction 
+[,42] timeBodyAccJerkSDX          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in X direction   
+[,43] timeBodyAccJerkSDY          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in Y direction   
+[,44] timeBodyAccJerkSDZ          | <num> average standard deviation of time of linear acceleration (jerk signal) by body in Z direction 
 [,45] timeBodyGyroSDX             | <num> average standard deviation of time of angular velocity by body in the X direction  
 [,46] timeBodyGyroSDY             | <num> average standard deviation of time of angular velocity by body in the Y direction 
 [,47] timeBodyGyroSDZ             | <num> average standard deviation of time of angular velocity by body in the Z direction 
 [,48] timeBodyGyroJerkSDX         | <num> average standard deviation of time of angular velocity by body (jerk signal) in the X direction
 [,49] timeBodyGyroJerkSDY         | <num> average standard deviation of time of angular velocity by body (jerk signal) in the Y direction
 [,50] timeBodyGyroJerkSDZ         | <num> average standard deviation of time of angular velocity by body (jerk signal) in the Z direction
-[,51] timeBodyAccMagSD            | <num> average standard deviation of magnitude of accelration signal by body using the Euclidean norm 
-[,52] timeGravityAccMagSD         | <num> average standard deviation of magnitude of acceleration signal by gravity using the Euclidean norm   
+[,51] timeBodyAccMagSD            | <num> average standard deviation of magnitude of accelration signal by body using Euclidean norm 
+[,52] timeGravityAccMagSD         | <num> average standard deviation of magnitude of acceleration signal by gravity using Euclidean norm   
 [,53] timeBodyAccJerkMagSD        | <num> average standard deviation of magnitude of linear acceleration (jerk signal) by body using Euclidean norm 
 [,54] timeBodyGyroMagSD           | <num> average standard deviation of magnitude of angular velocity by body using Euclidean norm      
 [,55] timeBodyGyroJerkMagSD       | <num> average standard deviation of magnitude of angular velocity by body (jerk signal) using Euclidean norm 
-[,56] freqBodyAccSDX              | <num> average standard deviation of frequency of acceleration signal by body in the X direction using FFT  
-[,57] freqBodyAccSDY              | <num> average standard deviation of frequency of acceleration signal by body in the Y direction using FFT  
-[,58] freqBodyAccSDZ              | <num> average standard deviation of frequency of acceleration signal by body in the Z direction using FFT  
-[,59] freqBodyAccJerkSDX          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in the X direction using FFT  
-[,60] freqBodyAccJerkSDY          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in the Y direction using FFT
-[,61] freqBodyAccJerkSDZ          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in the Z direction using FFT
+[,56] freqBodyAccSDX              | <num> average standard deviation of frequency of acceleration signal by body in X direction using FFT  
+[,57] freqBodyAccSDY              | <num> average standard deviation of frequency of acceleration signal by body in Y direction using FFT  
+[,58] freqBodyAccSDZ              | <num> average standard deviation of frequency of acceleration signal by body in Z direction using FFT  
+[,59] freqBodyAccJerkSDX          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in X direction using FFT  
+[,60] freqBodyAccJerkSDY          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in Y direction using FFT
+[,61] freqBodyAccJerkSDZ          | <num> average standard deviation of frequency of linear acceleration (jerk signal) by body in Z direction using FFT
 [,62] freqBodyGyroSDX             | <num> average standard deviation of frequency of angular velocity by body in the X direction using FFT 
 [,63] freqBodyGyroSDY             | <num> average standard deviation of frequency of angular velocity by body in the Y direction using FFT 
 [,64] freqBodyGyroSDZ             | <num> average standard deviation of frequency of angular velocity by body in the Z direction using FFT 
@@ -103,16 +104,16 @@ Variable                          | Description
 [,68] freqBodyBodyGyroJerkMagSD   | <num> average standard deviation of frequency of magnitude of angular velocity by body (jerk signal) using FFT  
 
 
-#Transformations (Data Analysis) 
+# Transformations (Data Analysis) 
 The original dataset contained seven files that were processed to make a tidyAnalysis.csv file:
 
-*'features.txt': List of all features.
-*'train/subject_train.txt': Identifiers for activity performers
-*'train/X_train.txt': Training set.
-*'train/y_train.txt': Training labels.
-*'test/subject_test.txt': Identifiers for activity performers
-*'test/X_test.txt': Test set.
-*'test/y_test.txt': Test labels.
+* 'features.txt': List of all features.
+* 'train/subject_train.txt': Identifiers for activity performers
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/subject_test.txt': Identifiers for activity performers
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
 
 Training data (subject_train, X_train, Y_train) and Test data (subject_test, X_test, y_test) were merged to create a full dataset containing all training and test data. Variable names (features) were added as headers to X_train and X_test data.  
 
